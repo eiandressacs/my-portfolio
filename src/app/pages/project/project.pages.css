@@ -1,0 +1,49 @@
+#project {
+  display: flex;
+  justify-content: center;
+}
+
+.project-main {
+  height: 100vh;
+  margin: 10px;
+  margin-bottom: 140px;
+  padding-left: 40px;
+  padding-right: 80px;
+  padding-top: 40px;
+
+
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+}
+
+.container-projects {
+  display: flex;
+}
+
+.project-title {
+  text-align: center;
+  color: #8a92b1;
+  font-size: 35px;
+  margin: 15px 0 10px 0;
+  display: block;
+  font-weight: bold;
+}
+
+.project-text {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(130, 137, 158);
+}
+
+.project-autor {
+  margin-left: 130px;
+  color: rgb(137, 143, 168);
+  font-weight: 700;
+}
+

@@ -1,0 +1,53 @@
+<section id="project">
+  <div class="project-main">
+    <div>
+      <h3 class="project-title">Projetos</h3>
+      <p class="project-text">
+        < Falar é facil, mostre-me os códigos >
+      </p>
+      <p class="project-autor">
+        Linus Torvalds
+      </p>
+    </div>
+
+    <div class="container-projects">
+      <div class="projects">
+
+        <app-projects
+        [imageUrl]="'assets/South.png'"
+        [imageAlt]="'Imagem clone Whatsapp Web'"
+        [title]="'Wiki South Park'"
+        [linkAcesso]="'https://eiandressacs.github.io/website-south-park/'"
+        [linkRepo]="'https://github.com/eiandressacs/website-south-park'">
+        </app-projects>
+
+        <app-repositorio
+        [imageUrl]="'assets/Whatsapp.png'"
+        [imageAlt]="'Imagem clone Whatsapp Web'"
+        [title]="'Clone Whatsapp Web'"
+        [linkRepo]="'https://github.com/eiandressacs/WhatsAppClone/tree/develop'">
+        </app-repositorio>
+      </div>
+
+      <div class="projects" *ngIf="lerMais">
+
+        <app-repositorio
+        [imageUrl]="'assets/Play.png'"
+        [imageAlt]="'Imagem PlayStation Store'"
+        [title]="'PlayStation Store'"
+        [linkRepo]="'https://github.com/eiandressacs/angular-storeProj'">
+        </app-repositorio>
+
+        <app-repositorio
+        [imageUrl]="'assets/teste.png'"
+        [imageAlt]="'Imagem Search Pokemon'"
+        [title]="'Pokemon Search'"
+        [linkRepo]="'https://github.com/eiandressacs/angular-searchPokemon'"
+        >
+        </app-repositorio>
+
+      </div>
+
+    </div>
+  </div>
+</section>

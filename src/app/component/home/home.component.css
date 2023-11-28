@@ -1,0 +1,140 @@
+/*************** Container ***************/
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.container-main {
+  background-color: rgba(28, 42, 63, 0.705);
+  border-radius: 10px;
+  width: 90%;
+  height: 100vh;
+  padding: 20px 0 20px 0;
+
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-title {
+  font-size: 25px;
+  font-weight: 200;
+  color: #2D7474;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+
+  animation: typing 5s steps(30) infinite;
+}
+
+/* Animação */
+@keyframes typing {
+  from, to {
+    width: 0;
+  }
+  30% {
+    width: 210px;
+  }
+}
+
+.container-text {
+  font-size: 60px;
+  color: #8a92b1;
+  margin: 5px 0 0 0;
+}
+
+/*
+.container-about {
+  font-size: 18px;
+  color: rgb(130, 137, 158);
+} */
+
+.container-btn {
+  text-decoration-line: none;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #2D7474;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #2D7474;
+  font-weight: 300;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-top: 5px;
+ }
+
+ .container-btn:hover {
+  background-color: #2D7474;
+  color: white;
+  transition: all 0.25s ease-in-out;
+ }
+
+ .container-btn:before, .container-btn:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+ }
+
+ .container-btn:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+ }
+
+ .container-btn:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: container-btn 1s linear infinite;
+  animation-play-state: paused;
+ }
+
+ .container-btn:hover:before {
+  border-color: #cdefbd;
+ }
+
+ .container-btn:hover:after {
+  border-top-color: #cdefbd;
+  animation-play-state: running;
+ }
+
+ @keyframes container-btn {
+  0% {
+   margin-top: -7px;
+   opacity: 1;
+  }
+
+  0.001% {
+   margin-top: -15px;
+   opacity: 0.4;
+  }
+
+  50% {
+   opacity: 1;
+  }
+
+  100% {
+   margin-top: 0;
+   opacity: 0.4;
+  }
+ }

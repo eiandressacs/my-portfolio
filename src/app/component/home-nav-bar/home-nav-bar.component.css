@@ -1,0 +1,92 @@
+/*************** Menu ***************/
+
+.menu.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu-bar{
+  color: #5D6A85;
+  width: 100vw;
+  height: 80px;
+  background-color: #09182E;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #222d5c;
+}
+
+.menu-image > a > .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 60px;
+  border: 1px solid #8a92b1;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  right: 10px;
+}
+
+.menu-list > li {
+  list-style-type: none;
+  padding: 0 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  color: #2D7474;
+}
+
+li:focus,
+li:active {
+  outline: none;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+li:focus::before,
+li:active::before {
+  opacity: 1;
+}
+
+.menu-list:hover > :not(li:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95,0.95);
+}

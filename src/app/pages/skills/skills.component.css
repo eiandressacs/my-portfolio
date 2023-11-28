@@ -1,0 +1,145 @@
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-main {
+  /* background-color: rgba(28, 42, 63, 0.705);
+  border-radius: 10px;
+  width: 90%;
+  height: 100vh;
+  padding-left: 40px;*/
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+/* .skills-description {
+  margin: -100px 0 40px 0;
+}
+
+.skills-description > h3{
+  text-align: center;
+  color: #8a92b1;
+  font-size: 35px;
+  display: block;
+  font-weight: bold;
+}
+
+.skills-description > p {
+  color: rgba(137, 43, 226, 0.397);
+} */
+
+.hard-skills {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box > .card-front {
+  background-color: #8a92b136;
+  border-radius: 5px;
+}
+
+.box > .card-front > img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+
+}
+.box > .card-front > #image-js {
+  border-radius: 28px;
+}
+
+/*------------------ TESTE ------------------*/
+
+.card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  /* width: 100%;
+  height: 100%; */
+  /* position: relative; */
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  /* width: 100%;
+  height: 100%; */
+  backface-visibility: hidden;
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: rotateY(0deg); */
+}
+
+.card-back {
+  background-color: #8a92b136;
+  border-radius: 5px;
+  margin-top: -100px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  color: rgba(240, 248, 255, 0.815);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transform: rotateY(180deg);
+}
+
+
+.card-back > .css {
+  color: #007fce;
+  font-weight: bold;
+}
+
+.card-back > .html {
+  color: #FF6520;
+  font-weight: bold;
+}
+
+.card-back > .javascript {
+  color: #F8DC3E;
+  font-weight: bold;
+}
+
+.card-back > .tp {
+  color: #3178C6;
+  font-weight: bold;
+}
+
+.card-back > .angular {
+  color: #D32A2D;
+  font-weight: bold;
+}
+
+.card-back > .java {
+  color: #D56A08;
+  font-weight: bold;
+}
+
+.card-back > .node {
+  color: rgba(50, 143, 50, 0.692);
+  font-weight: bold;
+}
+
+.card-back > .git {
+  color: #FF6520;
+  font-weight: bold;
+}
+
